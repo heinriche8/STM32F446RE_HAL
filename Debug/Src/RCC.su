@@ -1,0 +1,4 @@
+../Src/RCC.c:7:6:RCC_API_INIT	4	static
+../Src/RCC.c:12:6:RCC_AHB1_ENABLE	16	static
+../Src/RCC.c:17:6:RCC_APB1_ENABLE	16	static
+../Src/RCC.c:22:6:RCC_APB2_ENABLE	16	static
