@@ -29,6 +29,7 @@ void init() {
 
 int main(void)
 {
+	// Get dev to update
 	GPIO_PIN_SET(B, 5);
 
     while(1) {}
