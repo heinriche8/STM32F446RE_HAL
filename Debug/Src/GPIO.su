@@ -1,3 +1,4 @@
 ../Src/GPIO.c:4:6:GPIO_PIN_MODE	24	static
 ../Src/GPIO.c:14:6:GPIO_PIN_SET	24	static
 ../Src/GPIO.c:22:6:GPIO_PIN_CLR	24	static
+../Src/GPIO.c:30:6:GPIO_PIN_ALTFUN	24	static

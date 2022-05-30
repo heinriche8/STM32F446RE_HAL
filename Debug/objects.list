@@ -1,5 +1,6 @@
 "./Src/GPIO.o"
 "./Src/RCC.o"
+"./Src/TIMER.o"
 "./Src/main.o"
 "./Src/syscalls.o"
 "./Src/sysmem.o"

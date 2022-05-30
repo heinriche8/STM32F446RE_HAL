@@ -5,6 +5,7 @@
 #include "uart_driver.h"
 #include "RCC.h"
 #include "GPIO.h"
+#include "TIMER.h"
 
 
 /*
@@ -24,13 +25,13 @@ void init() {
 
 	// PB5 Alt funct 2 = TIM3_CH2
 	GPIO_PIN_ALTFUN(B, 5, ALT_2);
+
+	GP_TIMER_PWM_INIT(TIM_3, 2);
 }
 
 
 int main(void)
 {
-	// Get dev to update
-	GPIO_PIN_SET(B, 5);
 
     while(1) {}
 

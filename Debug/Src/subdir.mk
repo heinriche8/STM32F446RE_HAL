@@ -7,6 +7,7 @@
 C_SRCS += \
 ../Src/GPIO.c \
 ../Src/RCC.c \
+../Src/TIMER.c \
 ../Src/main.c \
 ../Src/syscalls.c \
 ../Src/sysmem.c \
@@ -15,6 +16,7 @@ C_SRCS += \
 OBJS += \
 ./Src/GPIO.o \
 ./Src/RCC.o \
+./Src/TIMER.o \
 ./Src/main.o \
 ./Src/syscalls.o \
 ./Src/sysmem.o \
@@ -23,6 +25,7 @@ OBJS += \
 C_DEPS += \
 ./Src/GPIO.d \
 ./Src/RCC.d \
+./Src/TIMER.d \
 ./Src/main.d \
 ./Src/syscalls.d \
 ./Src/sysmem.d \
@@ -36,7 +39,7 @@ Src/%.o Src/%.su: ../Src/%.c Src/subdir.mk
 clean: clean-Src
 
 clean-Src:
-	-$(RM) ./Src/GPIO.d ./Src/GPIO.o ./Src/GPIO.su ./Src/RCC.d ./Src/RCC.o ./Src/RCC.su ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/uart_driver.d ./Src/uart_driver.o ./Src/uart_driver.su
+	-$(RM) ./Src/GPIO.d ./Src/GPIO.o ./Src/GPIO.su ./Src/RCC.d ./Src/RCC.o ./Src/RCC.su ./Src/TIMER.d ./Src/TIMER.o ./Src/TIMER.su ./Src/main.d ./Src/main.o ./Src/main.su ./Src/syscalls.d ./Src/syscalls.o ./Src/syscalls.su ./Src/sysmem.d ./Src/sysmem.o ./Src/sysmem.su ./Src/uart_driver.d ./Src/uart_driver.o ./Src/uart_driver.su
 
 .PHONY: clean-Src
 
